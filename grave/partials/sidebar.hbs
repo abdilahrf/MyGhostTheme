@@ -1,0 +1,47 @@
+    <div id="sidebar">
+        <div class="animated fadeIn col-md-4 sidebar">
+            <div class="sidebar-header">
+               Facebook            
+            </div>
+            <div class="sidebar-content">
+                <iframe id="facebook-page" src="" scrolling="no" frameborder="0" style="border: none; overflow: hidden; width:282px; height: 271px;margin-left:-10px" allowtransparency="true"></iframe>
+            </div>
+        </div>
+        
+        <div class="animated fadeIn col-md-4 sidebar">
+            <div class="sidebar-header">
+               Custom Image/Ads        
+            </div>
+            <div class="sidebar-content">
+               <img id="cust_img" src=""/>
+                
+            </div>
+        </div>
+        
+        <div class="animated fadeIn col-md-4 sidebar">
+            <div class="sidebar-header">
+               Custom Text       
+            </div>
+            <div class="sidebar-content" id="sidebar-text">
+                
+            </div>
+        </div>
+        
+    </div>
+        
+        <script type="text/javascript">
+           
+            document.getElementById('cust_img').src = custom_img;
+
+        if(sidebar == 1){
+            document.getElementById('sidebar').style.display = "block";
+
+        }
+        else if(sidebar == 0){
+            document.getElementById('sidebar').style.display = "none";
+            document.getElementById('content').removeAttribute("class");
+        }
+
+
+        </script>
+                       

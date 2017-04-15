@@ -1,0 +1,26 @@
+
+	<article class="post has-image animated fadeInUp"  itemscope itemtype="http://schema.org/BlogPosting" role="article">   
+        <div class="post-cont">           
+            <header class="post-header">             
+                <h2 itemprop="name" class="post-title post-title-grid"><a href="{{url}}" itemprop="url" title="{{{title}}}">{{{title}}}</a></h2>          
+            </header>           
+            
+			{{#if tags}}
+			<div class="meta-tag"> <i class="icon-tag"></i>&nbsp;  {{tags separator=" - "}} </div>
+			{{/if}}
+			<div class="meta-comment"> <i class="icon-comment" style="position:relative;top:1px;"></i>&nbsp;<a href="{{url}}#disqus_thread" title="comment">&nbsp;0 Comments</a></div>
+			<div class="image-post">
+			{{content words="0"}} 
+			</div>
+			
+			
+            <div  itemprop="articleBody" class="textbody" >
+			{{content words="40"}}
+			</div>
+			<div class="post-info">         
+                <span class="post-data"><a class="post-date"><i style="position:relative;top:1px;" class="icon-clock"></i> <time datetime="{{date published_at format="YYYY-MM-DD"}}" itemprop="datePublished" >{{date published_at timeago="true"}}</time></a></span>                    
+                <a class="post-more" href="{{url}}">Read More</a>    
+             </div>   
+
+        </div>        
+    </article>

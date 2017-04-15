@@ -1,0 +1,21 @@
+/* 
+ * Theme Name: Kepriben
+ * Author: hasnydes
+ * Code: orange.css
+ * Description: Orange Color style
+ * 
+ */
+ 
+  #kepriben-header * {
+color: #f9f9f9;
+}
+#opacity {
+background: rgba(139, 67, 0, 0.5);
+}
+#kepriben-footer {
+background: rgba(153, 67, 0, 0.5);
+}
+nav.top-nav {
+background: #FC8638;
+}
+

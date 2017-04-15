@@ -1,0 +1,122 @@
+<!DOCTYPE HTML>
+<!--[if lt IE 7 ]><html class="ie ie6" lang="en"> <![endif]-->
+<!--[if IE 7 ]><html class="ie ie7" lang="en"> <![endif]-->
+<!--[if IE 8 ]><html class="ie ie8" lang="en"> <![endif]-->
+<!--[if IE 9 ]><html class="ie ie9" lang="en"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!--><html lang="en"> <!--<![endif]-->
+<head>
+	{{! Document Settings }}
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>{{meta_title}}</title>
+	
+	<!-- Meta Default -->
+		<meta name="title" content="{{meta_title}}">
+		<meta name="description" content="{{meta_description}}">
+	
+	{{! Styles }}
+	
+	<!-- Meta optimize -->
+		<meta name="HandledFriendly" content="True" />
+		<meta name="MobileOptimized" content="320" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    
+  
+	<!-- Meta opengraph & twitter -->
+		<meta name="twitter:card" content="summary">
+		<meta name="twitter:title" content="{{meta_title}}">
+		<meta name="twitter:description" content="{{meta_description}}">
+
+		<meta property="og:type" content="article">
+		<meta property="og:title" content="{{meta_title}}">
+		<meta property="og:description" content="{{meta_description}}">
+
+	<!-- Faficon -->
+		<link rel="shortcut icon" href="{{asset "/favicon.ico"}}">
+	
+	<!-- Main Style -->
+		<link rel="stylesheet" type="text/css" href="{{asset "css/style.css"}}">
+  
+	<!-- Custom Style -->
+		<link rel="stylesheet" href="{{asset "css/highlight/tomorrow.css"}}">
+		<link rel="stylesheet" type="text/css" href="{{ asset "css/switcher.css"}}" />
+		<link rel="stylesheet" type="text/css" href="{{ asset "css/animate.css"}}" />
+  
+	<!-- Google Font -->
+		<link href="http://fonts.googleapis.com/css?family=Open+Sans:400italic,400,600,700,800,300" rel="stylesheet" type="text/css">
+		<link href="http://fonts.googleapis.com/css?family=Raleway:400,600,500,700,300,200" rel="stylesheet" type="text/css">
+  
+	<!-- Color Schemes -->
+		<link rel="stylesheet" type="text/css" href="{{asset "css/color/default.css"}}" title="default" />
+		<link rel="alternate stylesheet" type="text/css" media="screen" href="{{asset "css/color/green.css"}}" title="green" />
+		<link rel="alternate stylesheet" type="text/css" media="screen" href="{{asset "css/color/blue.css"}}" title="blue" />
+		<link rel="alternate stylesheet" type="text/css" media="screen" href="{{asset "css/color/red.css"}}" title="red" />
+		<link rel="alternate stylesheet" type="text/css" media="screen" href="{{asset "css/color/purple.css"}}" title="purple" />
+		<link rel="alternate stylesheet" type="text/css" media="screen" href="{{asset "css/color/black.css"}}" title="black" />
+		<link rel="alternate stylesheet" type="text/css" media="screen" href="{{asset "css/color/orange.css"}}" title="orange" />
+		<link rel="alternate stylesheet" type="text/css" media="screen" href="{{asset "css/color/maroon.css"}}" title="maroon" />
+		<link rel="alternate stylesheet" type="text/css" media="screen" href="{{asset "css/color/yellow.css"}}" title="yellow" />
+		<link rel="alternate stylesheet" type="text/css" media="screen" href="{{asset "css/color/blue-ocean.css"}}" title="blue-ocean" />
+	
+	<!--[if lt IE 9]>
+		<script src="{{asset "js/html5shiv.js"}}"></script>
+	<![endif]-->
+	<script>
+
+     {{> config}}
+
+      (function(g,h,o,s,t,z){g.GoogleAnalyticsObject=s;g[s]||(g[s]=
+      function(){(g[s].q=g[s].q||[]).push(arguments)});g[s].s=+new Date;
+      t=h.createElement(o);z=h.getElementsByTagName(o)[0];
+      t.src='//www.google-analytics.com/analytics.js';
+      z.parentNode.insertBefore(t,z)}(window,document,'script','ga'));
+      ga('create',ga_ua);ga('send','pageview');
+
+      (function () {
+      var s = document.createElement('script'); s.async = true;
+      s.type = 'text/javascript';
+      s.src = '//' + disqus_shortname + '.disqus.com/count.js';
+      (document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0]).appendChild(s);
+      }());
+
+
+
+	</script>
+
+	{{ghost_head}}
+    
+    
+</head>
+<body class="{{body_class}} home-template">
+
+	<!-- Style Swicher -->
+		<div id="style-switcher" style="right:-212px;">
+			{{> switcher}}
+		</div>
+	<!-- ./Style Swicher -->
+	
+	
+	<!-- Left Header -->
+	{{#if @blog.cover}}
+	<header id="kepriben-header" style="background-image:url({{@blog.cover}});background-repeat:no-repeat;-webkit-background-size:cover;-moz-background-size: cover;-o-background-size: cover;background-size: cover;background-position:center;" >
+	{{else}}
+	<header id="kepriben-header">
+	{{/if}} 
+	{{> header}}
+	</header>
+	<div id="kepriben-menu-toggle" class="icon-menu">Toggle menu</div>
+	<!-- ./Left Header -->
+	
+	<div id="kepriben-content">
+	{{{body}}}
+	</div>
+	
+	{{> footer}}
+	{{ghost_foot}}
+	<script language="javascript" type="text/javascript">
+	responsive_iframes();
+	</script>		
+</body>
+</html>

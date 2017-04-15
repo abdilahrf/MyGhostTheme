@@ -1,0 +1,35 @@
+{{!< default}}
+{{! The tag above means - insert everything in this file into the {body} of the default.hbs template }}
+              
+    
+            
+        {{> "navbar"}}
+ 
+        <!-- Main Section -->    
+        <div class="container ">
+            <div class="row">
+                <div id="content" class="col-md-12">            
+                    <div class="content" >  
+                        <div class="breadcrumbs">
+                        <i class="fa fa-home"></i> &nbsp;<a href="/">Home</a>
+                        &nbsp;&nbsp;/&nbsp;&nbsp;404
+                        </div>
+                        
+                        <div class="error">
+                            <section class="error-details">
+                                <figure class="error-image">
+                                    <img class="error-ghost" src="/ghost/img/404-ghost@2x.png?v=e7e3915fa0" srcset="/ghost/img/404-ghost.png?v=e7e3915fa0 1x, /ghost/img/404-ghost@2x.png?v=e7e3915fa0 2x">
+                                </figure>
+                                <section class="error-message">
+                                    <h1 class="error-code">404</h1>
+                                    <h2 class="error-description">Page Not Found</h2>
+                                    <a class="error-link" href="{{@blog.url}}">Go to the front page →</a>
+                                </section>
+                            </section>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- End Main Section -->
+

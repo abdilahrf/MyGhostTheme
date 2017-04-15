@@ -1,0 +1,19 @@
+/* 
+ * Theme Name: Kepriben
+ * Author: hasnydes
+ * Code: maroon.css
+ * Description: Maroon Color style
+ * 
+ */
+ 
+ nav.top-nav {
+background: #EE5C79;
+}
+#opacity {
+background: rgba(238, 92, 121, 0.5);
+}
+
+#kepriben-footer {
+background: rgba(255, 37, 80, 0.5);
+}
+

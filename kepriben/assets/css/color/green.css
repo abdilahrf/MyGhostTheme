@@ -1,0 +1,26 @@
+/* 
+ * Theme Name: Kepriben
+ * Author: hasnydes
+ * Code: green.css
+ * Description: Green Color style
+ * 
+ */
+
+#kepriben-header * {
+color: #f9f9f9;
+}
+
+#opacity {
+background: rgba(0, 153, 61, 0.5);
+}
+
+#kepriben-footer {
+background: rgba(0, 97, 39, 0.5);
+}
+
+nav.top-nav {
+background: #63B95F;
+}
+
+
+

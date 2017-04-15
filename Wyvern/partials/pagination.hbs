@@ -1,0 +1,11 @@
+        <!-- Pagination -->
+        <div class="load-more">
+            {{#if prev}}
+            <input type="button" name="submit" onclick="location.href='{{page_url prev}}';" value="&larr; " /> 
+            {{/if}}	
+            <input type="button" class="page-number" style="cursor:default;" value="Page {{page}} of {{pages}} ">
+            {{#if next}}
+            <input type="button" name="submit"  onclick="location.href='{{page_url next}}';" value="&rarr; " /> 
+            {{/if}}
+        </div>
+        <!-- End Pagination -->

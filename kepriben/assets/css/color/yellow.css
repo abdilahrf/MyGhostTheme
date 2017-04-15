@@ -1,0 +1,28 @@
+/* 
+ * Theme Name: Kepriben
+ * Author: hasnydes
+ * Code: yellow.css
+ * Description: Yellow Color style
+ * 
+ */
+ 
+ nav.top-nav {
+background: #DBE239;
+}
+
+nav.top-nav ul li a {
+color: rgba(0, 0, 0, 0.5);
+font-weight: 500;
+}
+
+#opacity {
+background: rgba(139, 139, 0, 0.5);
+}
+
+#kepriben-footer {
+background: rgba(141, 153, 0, 0.5);
+}
+
+#kepriben-header * {
+color: #FFFFFF;
+}

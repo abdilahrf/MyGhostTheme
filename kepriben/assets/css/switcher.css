@@ -1,0 +1,210 @@
+/* ====== STYLE SWITCHER ====== */
+#style-switcher{
+    position:fixed;
+    right:-212px;
+    top:17%;
+    z-index:1000;
+}
+
+.switcher-button{
+    background: #fcfcfc;
+    padding: 6px 10px;
+    float: left;
+    cursor: pointer;
+    font-size: 20px;
+    border:1px solid #ddd;
+    border-right:0px;
+}
+
+.switcher-setting{
+    float: left;
+    width: 212px;
+    background: #fff;
+    border: 1px solid #ddd;
+    border-right: 0px;
+    padding: 14px 15px;
+}
+
+.switcher-title{
+    text-align:center;
+    color:#111;
+    margin-bottom: 8px;
+    padding-right: 15px;
+}
+
+.switcher-content{
+    margin-bottom:7px;
+}
+
+.switcher-content ul{
+    list-style:none;
+    margin:0;
+    padding:0;
+    margin-left: 5px;
+}
+
+.switcher-content a{
+    cursor:pointer;
+}
+
+.switcher-content ul li a{
+    float: left;
+    width: 29px;
+    height: 28px;
+    margin-right: 6px;
+    margin-bottom: 6px;
+}
+
+.switcher-default{
+    background:#D6D6D6
+}
+
+.switcher-green{
+    background:#1abc75
+}
+
+.switcher-red{
+    background:#F36262
+}
+
+.switcher-purple{
+    background:#7D62AF
+}
+
+.switcher-maroon{
+    background:#EE5C79
+}
+
+.switcher-black{
+    background:#5A5A5A
+}
+
+.switcher-orange{
+    background:#E78159
+}
+
+.switcher-yellow{
+    background:#FFE373
+}
+
+.switcher-blue-ocean{
+    background:#53B3E9
+}
+
+.switcher-blue{
+    background:#2D94CF
+}
+
+.switcher-bgdefault{
+    background-image: url('../img/bg_default.jpg');
+}
+
+.switcher-bgpattern1{
+    background-image: url('../img/bg_pattern1.png');
+}
+
+.switcher-bgpattern2{
+    background-image: url('../img/bg_pattern2.png');
+}
+
+.switcher-bgpattern3{
+    background-image: url('../img/bg_pattern3.png');
+}
+
+.switcher-bgpattern4{
+    background-image: url('../img/bg_pattern4.png');
+}
+
+.switcher-bgpattern5{
+    background-image: url('../img/bg_pattern5.png');
+}
+
+.switcher-bgpattern6{
+    background-image: url('../img/bg_pattern6.png');
+}
+
+.switcher-bgpattern7{
+    background-image: url('../img/bg_pattern7.png');
+}
+
+.switcher-bgpattern8{
+    background-image: url('../img/bg_pattern8.png');
+}
+
+.switcher-bgpattern9{
+    background-image: url('../img/bg_pattern9.png');
+}
+
+.switcher-bg-header-default{
+    background: #3a3a3a;
+}
+
+.switcher-bg-header-green{
+    background: #25553B;
+}
+
+.switcher-bg-header-blue{
+    background: #21455A;
+}
+
+.switcher-bg-header-blue-ocean{
+    background: #196E8F;
+}
+
+.switcher-bg-header-blue-ocean{
+    background: #196E8F;
+}
+
+.switcher-bg-header-green-light{
+    background: #2B724C;
+}
+
+.switcher-bg-header-red{
+    background: #8F3636;
+}
+
+.switcher-bg-header-purple{
+    background: #52325E;
+}
+
+.switcher-bg-header-orange{
+    background: #994535;
+}
+
+.switcher-bg-header-yellow{
+    background: #DFC36A;
+}
+
+.switcher-bg-header-maroon{
+    background: #8B3247;
+}
+
+.nobg{
+    border: 1px solid #ddd;
+    padding: 7px 12px;
+    margin: 0px 3px 1px 3px;
+    display: block;
+    text-align: center;
+    color:#333;
+}
+
+.switcher-sidebar ul{
+    margin:13px 0px 2px;
+    padding:0;
+    list-style:none;
+}
+
+.switcher-sidebar ul li{
+    border-bottom:1px solid #eee;
+    padding-bottom:7px;
+    margin:7px 3px 0px;
+}
+
+.switcher-sidebar ul li a{
+    color: #234B6B;
+}
+
+.switcher-sidebar ul li a:hover{
+    color: #ccc;
+}
+/* ====== STYLE SWITCHER ====== */

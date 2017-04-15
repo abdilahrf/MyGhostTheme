@@ -1,0 +1,20 @@
+/* 
+ * Theme Name: Kepriben
+ * Author: hasnydes
+ * Code: blue.css
+ * Description: Blue Color style
+ * 
+ */
+ 
+ nav.top-nav {
+background: #528EF8;
+}
+
+#opacity {
+background: rgba(0, 78, 139, 0.5);
+}
+
+#kepriben-footer {
+background: rgba(0, 55, 153, 0.5);
+}
+

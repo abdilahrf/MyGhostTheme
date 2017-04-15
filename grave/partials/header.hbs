@@ -1,0 +1,30 @@
+<div class="overlay"></div>
+<div class="{{#if @blog.cover}}header{{else}}default-header{{/if}}" {{#if @blog.cover}}style="background:url({{@blog.cover}}) no-repeat center center;background-size:cover;"{{/if}}>
+    <div class="container">
+      <div class="row">
+           <div class="col-md-4">
+                <h2><a class="logo-blog" href="{{@blog.url}}">{{@blog.title}}</a></h2>
+                {{#if @blog.description}}
+                   <p style="display:none;">{{@blog.description}}</p>
+                {{else}}
+               <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. </p>
+                {{/if}}
+            </div>
+            
+            <div class="col-md-8">
+                <ul class="menu clearfix" >
+                    <li><a id="home" href="#">Home</a></li>
+                    <li><a id="about" href="#">About</a></li>
+                    <li><a id="contact" href="#">Contact</a></li>
+                    <li><a id="other" href="#">Other</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+        <script type="text/javascript">
+            document.getElementById('home').href = home;
+            document.getElementById('about').href = about;
+            document.getElementById('contact').href = contact;
+            document.getElementById('other').href = other;
+        </script>

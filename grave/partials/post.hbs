@@ -1,0 +1,41 @@
+         {{#foreach posts}}  
+         <article class="animated fadeIn post {{#if featured}}featured{{/if}} {{#has tag="audio"}}audio{{/has}} {{#has tag="video"}}video{{/has}} {{#has tag="link"}}link{{/has}} {{#has tag="quote"}}quote{{/has}} {{#has tag="chat"}}chat{{/has}} " role="article" itemscope itemtype="http://schema.org/Article">
+             {{#if image}}
+               <div class="thumb-img" style="background:url({{image}});background-size:cover;width:100%;background-position:center;background-repeat:no-repat;height:300px;"></div>
+             {{else}}
+             {{content words="0"}}
+             {{/if}}
+               
+                <div class="ribbon-featured">{{#if featured}}<i class="fa fa-star"></i>{{/if}}{{#has tag="audio"}}<i class="fa fa-music"></i>{{/has}}{{#has tag="video"}}<i class="fa fa-film"></i>{{/has}}{{#has tag="link"}}<i class="fa fa-link"></i>{{/has}}{{#has tag="quote"}}<i class="fa fa-quote"></i>{{/has}}{{#has tag="chat"}}<i class="fa fa-comments-o"></i>{{/has}}</div>
+                
+                <div class="post-content clearfix">
+                    <h2 itemprop="headline" ><a href="{{url}}" title="{{{title}}}" rel="bookmark">{{{title}}}</a></h2>
+                <p class="meta">
+                    {{#if author.image}}
+                    <img class="author-thumb" src="{{author.image}}" alt="Author image" nopin="nopin"  />
+                    <span style="display:none;">Author</span><a href="{{author.url}}" alt="{{{author.name}}}"> &nbsp; {{author}}</a> 
+                {{else}}
+                    <i class="fa fa-user"></i><span style="display:none;">Author</span><a href="{{author.url}}" alt="{{{author.name}}}"> {{author}}</a> 
+                {{/if}}
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<time class="post-date" datetime="{{date format='YYYY-MM-DD'}}" itemprop="datePublished"><i class="fa fa-calendar"></i>  &nbsp;{{date format="DD MMMM YYYY"}}</time> 
+                    {{#if tags}}
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i class="fa fa-tags"></i>
+                   <span style="display:none;">Tags</span><span class="tag">  &nbsp;#{{tags separator=" #"}} </span>
+                    {{/if}}
+                </p>
+                <p class="post-text" itemprop="articleBody">
+                    {{excerpt words="40"}}
+                </p>
+                <hr>
+                <a href="{{url}}"><div class="sink btn btn-readmore">Readmore &rarr;</div></a>
+                    <div class="meta-comment"><i class="fa fa-comment-o"></i> &nbsp;<a href="{{url}}#disqus_thread">0 Comments</a></div>
+                </div>
+                
+            </article>
+            {{/foreach}}
+            
+            {{#if pagination}}
+            <div class="page-container">
+{{{pagination}}}
+            </div>
+            {{/if}}

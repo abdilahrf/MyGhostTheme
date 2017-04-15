@@ -1,0 +1,37 @@
+{{!< default}}
+{{! The tag above means - insert everything in this file into the {body} of the default.hbs template }}
+
+            
+            <!-- Start Navbar -->
+            {{> "navbar"}}
+            <!-- Stop Navbar -->
+        
+            <!-- Top Banner -->
+            {{> "topbanner"}}
+			<!-- End Top Banner -->
+			
+			<!-- Subscribe Form -->
+            {{> "subscribe"}}
+			<!-- End Subscribe Form -->
+			
+            <!-- Tag Desc -->
+<div class="tag-desc"><h3><i class="fa fa-tag"></i> Tag : {{tag.name}}</h3></div>
+            <!-- Tag desc -->
+
+        <!-- Main Section -->    
+        <div class="container ">
+            <div class="row">
+
+                <!-- Post -->
+{{> "post"}}
+                <!-- Post -->
+
+<!-- Siderbar -->
+{{> "sidebar"}}
+
+                
+
+<a href="#" class="scrollup"><i class="fa  fa-arrow-up"></i></a>
+            </div>
+        </div>
+        <!-- End Main Section -->

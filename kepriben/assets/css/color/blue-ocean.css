@@ -1,0 +1,25 @@
+/* 
+ * Theme Name: Kepriben
+ * Author: hasnydes
+ * Code: blue-ocean.css
+ * Description: Blue Ocean Color style
+ * 
+ */
+
+
+ #kepriben-header * {
+color: #f9f9f9;
+}
+
+#opacity {
+background: rgba(0, 141, 153, 0.5);
+}
+
+nav.top-nav {
+background: #3EBDCE;
+}
+
+#kepriben-footer {
+background: rgba(0, 116, 153, 0.5);
+}
+

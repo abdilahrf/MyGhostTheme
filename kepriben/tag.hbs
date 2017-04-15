@@ -1,0 +1,19 @@
+{{!< default}}
+
+<main class="content-index content" role="main"> 
+	{{> nav}}
+</main>
+
+<div class="post-container grid-cont-post" style="opacity: 1; height: auto;">
+
+	{{#foreach posts}}
+	{{> listpost}}
+	{{/foreach}}
+
+
+	{{#if pagination}}
+	<div class="kepriben_pagination" >
+	{{{pagination}}}
+	</div>
+	{{/if}}
+</div>

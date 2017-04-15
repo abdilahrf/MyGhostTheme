@@ -1,0 +1,43 @@
+    <div class="overlay"></div>
+{{#if @blog.cover}}
+    <div class="header-section" style="background-image: url({{@blog.cover}});">
+        {{else}}
+<div class="header-section" style="background-image: url(http://127.0.0.1:2368/shared/img/user-cover.png);">
+    {{/if}}
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 logo">
+                        {{#if @blog.title}}
+                        <a class="orange" href="{{@blog.url}}">{{@blog.title}}</a>
+                        {{/if}}
+                </div>
+
+                <nav class="col-md-8 menu ">
+                    <ul class="clearfix">
+                        <li><a href="{{@blog.url}}">Home</a></li>
+                        <li><a href="">About</a></li>
+                        <li><a href="http://facebook.com/hasnydesign">Contact</a></li>
+                        <li><a href="http://hasnydes.us">Blog</a></li>
+                    </ul>
+                </nav>
+
+            </div>
+            <div class="row header-content">
+                <div class="col-md-12">
+                    <h2 class="head-title">{{#if @blog.title}}<b>{{@blog.title}}</b>{{/if}} - Responsive Ghost Theme</h2>
+                    {{#if @blog.logo}}
+                    <div class="ava" style="background-image:url({{@blog.logo}});"></div>
+                    {{else}}
+                    <div class="ava" style="background-image:url({{@blog.url}}/shared/img/user-image.png);"></div>
+                    {{/if}}
+                    <p class="header-desc">
+                        {{#if @blog.description}}
+                            {{@blog.description}}
+                        {{else}}
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic cum modi placeat ut eaque odit obcaecati, voluptatum in provident facere expedita nemo, aliquid mollitia maxime sed id excepturi autem quam.
+                        {{/if}}
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>

@@ -1,0 +1,83 @@
+{{#post}}
+<div class="col-md-8" id="content">
+                <h2 class="post-title"><a href="{{{url}}}">{{title}}</a></h2>
+                <div class="meta">
+                    <i class="fa fa-user"></i>&nbsp; <a href="{{author.url}}">{{author.name}}</a>&nbsp;
+                    <i class="fa fa-clock-o"></i>&nbsp; <time datetime="{{date published_at format="YYYY-MM-DD"}}" itemprop="datePublished" >{{date published_at timeago="true"}}</time> &nbsp;
+        {{#if tags}}<i class="fa fa-tag"></i>&nbsp; {{tags separator=" , "}} &nbsp;{{/if}} &nbsp;
+                </div>
+                <div class="post-text">
+                     {{content}}
+                     <!-- End Content -->
+                </div>
+                <hr class="divider">
+                <ul class="sharer">
+                    <b>Share on: 	</b>
+                    <li class="share-on">
+
+                        <a target="blank" title="Big+Sur" href="https://twitter.com/share?text={{@blog.url}}{{{url}}}" onclick="window.open('https://twitter.com/share?text={{@blog.url}}{{{url}}}','twitter','width=450,height=300,left='+(screen.availWidth/2-375)+',top='+(screen.availHeight/2-150)+'');return false;" class="twitter">
+                            <i class="fa fa-twitter"></i>	
+                        </a>
+                    </li>
+                    <li class="share-on">
+                        <a href="http://pinterest.com/pin/create/button/?url={{@blog.url}}{{{url}}}" onclick="window.open('http://pinterest.com/pin/create/button/?url={{@blog.url}}{{{url}}}','pinterest','width=450,height=300,left='+(screen.availWidth/2-375)+',top='+(screen.availHeight/2-150)+'');return false;" target="blank" class=" pinterest offblack">
+                            <i class="fa fa-pinterest"></i>	
+                        </a>
+                    </li>
+                    <li class="share-on">
+                        <a target="blank" title="Big+Sur" href="http://www.facebook.com/share.php?u={{@blog.url}}{{{url}}}" onclick="window.open('http://www.facebook.com/share.php?u={{@blog.url}}{{{url}}}','facebook','width=450,height=300,left='+(screen.availWidth/2-375)+',top='+(screen.availHeight/2-150)+'');return false;" class=" facebook ">
+                            <i class="fa fa-facebook"></i>	
+                        </a>
+                    </li>
+
+                    <li class="share-on">
+                        <a onclick="window.open('https://plus.google.com/share?url={{@blog.url}}{{{url}}}','gplusshare','width=450,height=300,left='+(screen.availWidth/2-375)+',top='+(screen.availHeight/2-150)+'');return false;" href="https://plus.google.com/share?url={{@blog.url}}{{{url}}}" class=" googleplus offblack">
+                            <i class="fa fa-google-plus"></i>	
+                        </a>
+                    </li>
+                </ul>
+                </b>
+                <hr class="divider">
+                <div class="author clearfix">
+                   
+                    {{#if author.image}}
+                    <div class="author-ava" style="background:url({{author.image}});background-size:cover;background-position:center;background-repeat:no-repeat;width:100px;height:100px;border-radius:20px;"></div>
+                    {{else}}
+                    <div class="author-ava" style="background:url({{@blog.url}}/shared/img/user-image.png);background-size:cover;background-position:center;background-repeat:no-repeat;width:100px;height:100px;border-radius:20px;"></div>
+                    {{/if}}
+                    <div class="bio-author">
+                        <small>Post By</small>
+                        <h4 class="author-name"><a href="{{author.url}}">{{author.name}}</a></h4>
+                    {{#if author.website}}
+                        <small><i class="fa fa-globe"></i> Website</small>
+                        <h4 class="author-website"><i><a href="{{author.website}}">{{author.website}}</a></i></h4>
+                    {{/if}}
+                    </div>
+                    <div class="bio-author-text">
+                        {{author.bio}}
+                    </div>
+                </div>
+{{/post}}
+                <div id="disqus_thread" class="disqus"></div>
+            </div>
+            
+               <!-- Disqus -->
+
+    <script type="text/javascript">
+        /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+        
+
+        /* * * DON'T EDIT BELOW THIS LINE * * */
+        (function () {
+            var dsq = document.createElement('script');
+            dsq.type = 'text/javascript';
+            dsq.async = true;
+            dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+            (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+        })();
+        
+    </script>
+    <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a>
+    </noscript>
+    
+    

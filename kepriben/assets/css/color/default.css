@@ -1,0 +1,146 @@
+/* 
+ * Theme Name: Kepriben
+ * Author: hasnydes
+ * Code: default.css
+ * Description: Default Color style
+ * 
+ */
+
+
+html,
+body{
+  color: #5b5b5b;
+}
+
+a {
+  color:black
+}
+
+h1, h2, h3, h4, h5, h6 {
+color: #595959;
+}
+
+input, textarea, select {
+  background: #f9f9f9;
+  }
+  
+input:hover, textarea:hover, select:hover {
+  border-color: #939393;
+}
+
+input:active, textarea:active, select:active, input:focus, textarea:focus, select:focus, input:checked, textarea:checked, select:checked {
+  border-color: #606060;
+}
+
+
+#kepriben-header * {
+	color: #f9f9f9;
+}
+#opacity {
+background: rgba(0, 0, 0, 0.5);
+}
+
+#kepriben-header #kepriben-desc h3 {
+	color: #F1F1F1;
+}
+
+#kepriben-header nav:before {
+background: #2a2a2a;
+}
+
+#kepriben-header nav a:hover{
+	color:#000;
+	background:#f9f9f9;
+	border:solid 1px #f9f9f9;
+}
+
+.button, [type="submit"], [type="reset"], [type="button"], [type="image"] {
+border-bottom: solid 1px lightgrey;
+}
+
+.button[class*="icon-"]:hover, 
+[class*="icon-"][type="submit"]:hover,
+[class*="icon-"][type="reset"]:hover,
+[class*="icon-"][type="button"]:hover,
+[class*="icon-"][type="image"]:hover {
+
+  border-bottom: solid 1px #c6c6c6;
+  color: #5b5b5b;
+}
+
+#kepriben-menu-toggle {
+
+background: #212121;
+color: #f9f9f9;
+
+}
+
+#kepriben-menu-toggle:hover {
+  background: #d87547;
+}
+
+nav.top-nav{
+background:#212121;
+}
+
+nav.top-nav ul li a {
+color: rgba(255,255,255,.5);
+}
+
+nav.top-nav ul li a:hover{
+color: rgba(255,255,255,1);
+}
+
+#view-menu {
+background-color: #f4f0eb;
+}
+
+
+.btn-select {
+border: 1px solid #737180;
+color: #737180;
+}
+
+.color{
+background:#000;
+}
+
+.grid-cont-post .post {
+border: 1px solid rgba(0,0,0,.15);
+}
+
+.post-data, .post-comment {
+color: #222;
+}
+
+.post-title h2 {
+color:#000000 !important;
+}
+
+a.post-more {
+color: #737180;
+}
+
+a.post-more:hover{
+border: 1px solid rgba(115, 113, 128, 0.8);
+}
+
+a.post-date{
+color: #737180;
+}
+
+.tag a{
+color:#212121;
+}
+
+#kepriben-footer{
+	background:rgba(0, 0, 0, 0.5);
+	}
+#kepriben-footer h4{
+	color: #c9c9c9;
+}
+
+
+
+
+

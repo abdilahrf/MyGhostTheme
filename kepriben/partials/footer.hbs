@@ -1,0 +1,36 @@
+<!-- JavaScript Loaded on end of page -->
+
+<script>
+			// karena pake class maka returnnya Array
+			var sl = document.getElementsByClassName("textbody");
+
+var detek = document.getElementsByClassName('image-post'),
+    total = detek.length,
+    reg   = /<img.*src|<iframe.*src/gi; // silakan dimainkan RegEx-nya
+
+(function() {
+  var i = 0,
+      text;
+  for ( ; i < total; ++i ) {
+    text = detek[i].innerHTML;
+    if ( text.search(reg) == -1 ) {
+      sl[i].style.display = 'block';
+    }else{
+      sl[i].style.display = 'none';
+    }
+  }
+})();
+	</script>
+	<script src="{{asset "js/all.min.js"}}"></script>
+	<script src="{{asset "js/highlight.pack.js"}}"></script>
+	<script type="text/javascript" src="{{asset "js/jquery.js"}}"></script>
+	<script type="text/javascript" src="{{asset "js/index.js"}}"></script>
+	<script src="{{asset "js/jquery.fitvids.js"}}"></script>
+	<script type="text/javascript" src="{{asset "js/switcher.js"}}"></script>
+	<script >
+	 // $(document).ready(function(){
+		// Target your .container, .wrapper, .post, etc.
+		//$("#kepriben-content").fitVids();
+	 // });
+	</script>
+	<script>hljs.initHighlightingOnLoad();</script>

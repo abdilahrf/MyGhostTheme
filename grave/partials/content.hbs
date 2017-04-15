@@ -1,0 +1,22 @@
+<div class="container" role="main">
+    <div id="content" class="col-md-8 content">
+       <div class="row">
+{{#if posts}}
+{{> post}}
+{{else}}
+    <article class="post">
+       <div class="post-content clearfix">
+       <img src="../assets/img/img1.jpg" />
+        <h2>Not have any posts yet </h2>
+    </div>
+    </article>
+
+{{/if}}
+        </div>
+    </div>
+    
+    <div class="row">
+{{> sidebar}}
+</div>
+</div>
+

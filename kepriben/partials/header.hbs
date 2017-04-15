@@ -1,0 +1,34 @@
+	<div id="opacity" >
+		<div id="kepriben-desc">
+		{{#if @blog.logo}}
+		<a href="{{@blog.url}}"><img src="{{@blog.logo}}" alt="{{@blog.title}}" height="100px" width="100px" /></a>
+		{{else}}
+		<a href="{{@blog.url}}"><img src="" alt="{{@blog.title}}" height="100px" width="100px" /></a>
+		{{/if}}
+		<a title="{{@blog.title}}" href='{{@blog.url}}'>
+		<h1>{{{@blog.title}}}</h1>
+		</a>
+		<h3><a title="{{@blog.title}}">
+		{{@blog.description}}
+		</a></h3>
+		</div>
+		
+		<nav role="navigation">
+		<!-- You can change social link with your own -->
+		  <a class="button icon-twitter" href="http://www.twitter.com/abdilahrf" title="Twitter">Twitter</a>
+		  <a class="button icon-facebook" href="http://www.facebook.com/abdilah.jk" title="Facebook">Facebook</a>
+		  <a class="button icon-googleplus" href="http://plus.google.com/someone" title="Google plus">Google plus</a>
+		  <a class="button icon-rss" href="{{@blog.url}}/rss" title="rss">rss</a>
+		</nav>
+		
+		   {{tags}}
+		  <nav role="navigation" class="tag">
+		    {{tags separator=" | "}}  
+			</nav></b>
+			
+		
+		<div id="kepriben-footer">
+		<h4>All content copyright <a href="{{@blog.url}}">{{@blog.title}}</a> © 2014 • All rights reserved.
+		Proudly published with <a href="http://ghost.org">Ghost</a></h4>
+		</div>
+	</div>	

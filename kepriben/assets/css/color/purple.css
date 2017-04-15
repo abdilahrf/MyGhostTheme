@@ -1,0 +1,25 @@
+/* 
+ * Theme Name: Kepriben
+ * Author: hasnydes
+ * Code: purple.css
+ * Description: Purple Color style
+ * 
+ */
+
+
+ #kepriben-header * {
+color: #f9f9f9;
+}
+
+#opacity {
+background: rgba(153, 0, 116, 0.5);
+}
+
+#kepriben-footer {
+background: rgba(122, 0, 153, 0.5);
+}
+
+nav.top-nav {
+background: #C95BFD;
+}
+

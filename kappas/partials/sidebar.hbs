@@ -1,0 +1,63 @@
+       <div class="col-md-4" id="sidebar" >
+                <div class="sidebar sidebar-facebook-page">
+                    <div class="sidebar-title">
+                        <h4>Facebook Page</h4>
+                    </div>
+                    <div class="sidebar-row">
+                        <div id="sidebar-facebook fb-root">
+                            <script>
+                                (function (d, s, id) {
+                                    var js, fjs = d.getElementsByTagName(s)[0];
+                                    if (d.getElementById(id)) return;
+                                    js = d.createElement(s);
+                                    js.id = id;
+                                    js.src = "//connect.facebook.net/en_US/all.js#xfbml=1&appId=386043438147984";
+                                    fjs.parentNode.insertBefore(js, fjs);
+                                }(document, 'script', 'facebook-jssdk'));
+                            </script>
+                            <iframe id="facebook-page" src="//www.facebook.com/plugins/likebox.php?href=https://facebook.com/hasnydesign&amp;width=293&amp;colorscheme=light&amp;show_faces=true&amp;stream=false&amp;header=false&amp;height=315&amp;show_border=false" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:293px; height:250px;" allowtransparency="true"></iframe>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="sidebar sidebar-custom-img">
+                    <div class="sidebar-title">
+                        <h4>Custom Img/Ads</h4>
+                    </div>
+                    <div class="sidebar-row">
+                        <div id="sidebar-ads">
+                            <a href="#">
+                                    <img id="cust_img" src="#" />
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+
+
+                <div class="sidebar sidebar-custom-text">
+                    <div class="sidebar-title">
+                        <h4>Custom Text</h4>
+                    </div>
+                    <div class="sidebar-row">
+                        <div id="sidebar-text">
+
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            
+            <script type="text/javascript">
+                document.getElementById('cust_img').src = custom_img;
+        
+            if(sidebar == 1){
+                document.getElementById('sidebar').style.display = "block";
+               
+            }
+            else if(sidebar == 0){
+                document.getElementById('sidebar').style.display = "none";
+                document.getElementById('content').removeAttribute("class");
+	        }
+        
+            </script>

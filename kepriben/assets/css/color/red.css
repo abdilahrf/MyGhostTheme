@@ -1,0 +1,24 @@
+/* 
+ * Theme Name: Kepriben
+ * Author: hasnydes
+ * Code: red.css
+ * Description: Red Color style
+ * 
+ */
+
+#kepriben-header * {
+color: #f9f9f9;
+}
+
+#opacity {
+background: rgba(153, 0, 0, 0.5);
+}
+
+#kepriben-footer {
+background: rgba(153, 0, 0, 0.5);
+}
+
+nav.top-nav {
+background: #FF3F3F;
+}
+

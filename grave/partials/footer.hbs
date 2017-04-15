@@ -1,0 +1,60 @@
+   <div class="footer-top">
+          <div class="container">
+               <div class="col-md-4 subscribe">
+                   <h3>Get In touch</h3>
+                   <p>
+                       We're Not Send Spam
+                       In your inbox
+                       <form id="mailchimp" action="" method="post" target=”_blank”>
+                       <input type="email" name="EMAIL" class="subscribe-input" />
+                       <input type="submit" class="subscribe-button hvr-sweep-to-right" value="Subscribe Now!" />
+                       </form>
+                   </p>
+                </div>
+
+               <div class="col-md-4 social-media">
+                   <h3>Social Media</h3>
+                   <p>
+                       <ul class="social-media">
+                           <li><a id="facebook" href=""><i class="fa fa-facebook"></i></a></li>
+                           <li><a id="twitter" href=""><i class="fa fa-twitter"></i></a></li>
+                           <li><a id="google_plus" href=""><i class="fa fa-google-plus"></i></a></li>
+                           <li><a id="instagram" href=""><i class="fa fa-instagram"></i></a></li>
+                           <li><a id="github" href=""><i class="fa fa-github"></i></a></li>
+                           <li><a id="stack_overflow" href=""><i class="fa fa-stack-overflow"></i></a></li>
+                           <li><a id="vimeo" href=""><i class="fa fa-vimeo-square"></i></a></li>
+                           <li><a id="youtube" href=""><i class="fa fa-youtube"></i></a></li>
+                       </ul>
+                   </p>
+               </div>
+
+               <div class="col-md-4 about-admin">
+                   <h3>About Admin</h3>
+                   {{#if @blog.logo}}
+                       <div class="logo" style="background:url({{@blog.logo}}) no-repeat center center;background-size:cover;"></div>
+                   {{/if}}
+                   <p>
+                       {{#if @blog.description}}
+                           {{@blog.description}}
+                       {{/if}}
+                   </p>
+               </div>
+          </div>
+   </div>
+    <footer>
+        <a href="http://hasnydes.us/">Hasnydesign</a> &copy; 2015
+    </footer>
+    
+    <script type="text/javascript">
+       
+        document.getElementById('facebook').href = facebook;
+        document.getElementById('twitter').href = twitter;
+        document.getElementById('google_plus').href = google_plus;
+        document.getElementById('instagram').href = instagram;
+        document.getElementById('github').href = github;
+        document.getElementById('stack_overflow').href = stack_overflow;
+        document.getElementById('vimeo').href = vimeo;
+        document.getElementById('youtube').href = youtube;
+    </script>
+        
+   

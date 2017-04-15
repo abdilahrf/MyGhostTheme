@@ -1,0 +1,33 @@
+   <div class="content-section">
+        <div  class="row">
+            <article class="postContainer" >
+           {{#foreach posts}}
+            <div class="item">
+                <div class="post animated fadeInUp">
+                    <div class="thumbnail">
+                        {{content words="0"}}
+                    </div>
+                    <div class="content">
+                        <h2><a href="{{url}}" title="{{{title}}}" >{{{title}}}</a></h2>
+                        <div class="meta">
+                            <i class="fa fa-user"></i>&nbsp; <a href="{{author.url}}">{{author.name}}</a> &nbsp;
+                            <i class="fa fa-clock-o"></i>&nbsp; <time datetime="{{date published_at format="YYYY-MM-DD"}}" itemprop="datePublished" >{{date published_at timeago="true"}}</time> &nbsp;
+                           {{#if tags}}<i class="fa fa-tag"></i>&nbsp; {{tags separator=" , "}} &nbsp;{{/if}}</div>
+                        <div class="excerpt">{{excerpt words="40"}}</div>
+                       <div class="readmore">
+                         <a class="btn-read" href="{{url}}">
+                            Read More
+                        </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            {{/foreach}}
+            </article>
+            {{#if pagination}}
+            <div class="col-md-12 loadmore">
+                {{{pagination}}}
+            </div>
+           {{/if}}
+        </div>
+    </div>
