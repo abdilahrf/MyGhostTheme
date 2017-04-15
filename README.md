@@ -1,6 +1,6 @@
 ### My Ghost CMS Themes
 
-- [Grave](http://gravedemo-hasnydesgn.rhcloud.com)
+- [Grave](http://gravedemo-hasnydesign.rhcloud.com)
 - [Kappas](http://kappas-responsivethemes.rhcloud.com)
 - [Wyvern](http://wyvern-hasnydes.rhcloud.com)
 - [Kepriben](http://kepriben-responsivethemes.rhcloud.com)
